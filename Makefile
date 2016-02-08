@@ -12,4 +12,4 @@ push:
 	docker push $(DOCKER_IMAGE_NAME)
 
 test:
-	docker run --rm $(DOCKER_IMAGE_TAGNAME) /bin/bash -c "source /nvm/nvm.sh && nvm ls"
+	docker run --rm $(DOCKER_IMAGE_TAGNAME) /bin/bash -c "piblaster --version"
